@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZK-5z-EZR">
+                                <rect key="frame" x="20" y="78.999999999999986" width="353" height="255.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-Ka-fGU">
+                                        <rect key="frame" x="172" y="86.333333333333343" width="9" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M93-XA-PeR">
+                                        <rect key="frame" x="0.0" y="145.33333333333334" width="353" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="XDd-Ka-fGU" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="eZK-5z-EZR" secondAttribute="centerX" id="4bD-pq-v9P"/>
+                                    <constraint firstItem="M93-XA-PeR" firstAttribute="leading" secondItem="eZK-5z-EZR" secondAttribute="leading" id="ExW-cE-mCC"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M93-XA-PeR" secondAttribute="trailing" id="Qw5-LO-5uj"/>
+                                    <constraint firstItem="M93-XA-PeR" firstAttribute="top" secondItem="XDd-Ka-fGU" secondAttribute="bottom" constant="8" id="S7P-FQ-Ewu"/>
+                                    <constraint firstItem="M93-XA-PeR" firstAttribute="centerX" secondItem="XDd-Ka-fGU" secondAttribute="centerX" id="agZ-4T-bsp"/>
+                                    <constraint firstItem="XDd-Ka-fGU" firstAttribute="centerY" secondItem="eZK-5z-EZR" secondAttribute="centerY" constant="-16" id="q49-On-LMR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZK-5z-EZR" secondAttribute="trailing" constant="20" id="AaD-gl-p7H"/>
+                            <constraint firstItem="eZK-5z-EZR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="TqY-aC-NN1"/>
+                            <constraint firstItem="eZK-5z-EZR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fdd-Dr-RjX"/>
+                            <constraint firstItem="eZK-5z-EZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xcm-HX-axE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="M93-XA-PeR" id="Kxb-Pb-sFE"/>
+                        <outlet property="temperatureLabel" destination="XDd-Ka-fGU" id="kHC-TD-cz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424" y="-271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
