@@ -35,4 +35,25 @@ extension Weather {
     var temp: Double {
         return main.temp 
     }
+    
+    var feelsLike: Double {
+        return main.temp
+    }
+    
+    var tempMin: Double {
+        return main.tempMin
+    }
+    
+    var tempMax: Double {
+        return main.tempMax
+    }
+    
+    var pressure: Double {
+        return main.pressure
+    }
+    
+    var humidity: Double {
+        return main.humidity
+    }
+    
 }

@@ -15,6 +15,13 @@ class HomeController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var feelslikeLabel: UILabel!
+    @IBOutlet weak var minTemperatureLabel: UILabel!
+    @IBOutlet weak var maxTemperatureLabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,8 +34,24 @@ class HomeController: UIViewController {
     }
     
     private func setupUI() {
+        setupHeader()
+        setupSubHeader()
+        
+    }
+    
+    private func setupHeader() {
         temperatureLabel.text = viewModel.temperatureString
         nameLabel.text = viewModel.nameString
+    }
+    
+    private func setupSubHeader() {
+        feelslikeLabel.text = viewModel.feelsLikeTemperatureString
+        minTemperatureLabel.text = viewModel.minTemperatureString
+        maxTemperatureLabel.text = viewModel.maxTemperatureString
+        pressureLabel.text = viewModel.pressureTemperatureString
+        humidityLabel.text = viewModel.humidityTemperatureString
+
+        
     }
 }
 
